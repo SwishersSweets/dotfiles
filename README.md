@@ -1,6 +1,6 @@
-##My config
+My config
 
-"config" is stuff from my .config file 
+config is stuff from my .config file 
 
 scripts are scripts that are used in my window managers configs (also includes my dwm and openbox opening script for sddm)
 
@@ -10,7 +10,7 @@ Xresources and xinitrc are as they say, my .Xresources and .xinitrc
 
 
 
-##random info
+Random info
 
 my sddm theme is tokyo night: https://github.com/siddrs/tokyo-night-sddm
 
