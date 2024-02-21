@@ -1,0 +1,39 @@
+Xcursor.theme: Adwaita
+Xcursor.size: 24
+*.foreground:   #FFFFFF
+*.background:   #101010
+*.cursorColor:  #A4A4A4
+
+URxvt.scrollBar: false
+UXxvt.geometry: 400x400
+URxvt.iso14755: false
+URxvt.font: xft:Courier Prime SemiBold:size=10
+URxvt.letterSpace: -1
+URxvt.lineSpace: -1
+
+
+!Colors
+!0,8 Black/Gray
+!1,9 Red LRed
+!2,10 Green LGreen
+!3,11 Yellow LYellow
+!4,12 BBlue LBlue
+!5,13 Purple Magenta
+!6,14 DCyan Cyan
+!7,15 LGray ,White
+*color0:#000000
+*color1:#C50000
+*color2:#00cc00
+*color3:#DDE400
+*color4:#0011D1
+*color5:#9500D3
+*color6:#00E5D4
+*color7:#ABABAB
+*color8:#454545
+*color9:#FF0000
+*color10:#21FF00
+*color11:#FEFF00
+*color12:#515FFF
+*color13:#DA00FF
+*color14:#00FFEC
+*color15:#FFFFFF

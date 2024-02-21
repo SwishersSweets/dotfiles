@@ -1,0 +1,8 @@
+xrandr --setprovideroutputsource modsettings nvidia-0 &
+# xrandr --auto &
+# xrandr --dpi 101
+exec picom &
+feh --no-fehbg --bg-center path to wallpaper (serioussamdark.png)
+xrdb ~/.Xresources
+exec slstatus &
+exec dwm

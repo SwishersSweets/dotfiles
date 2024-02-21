@@ -1,0 +1,2 @@
+#!/bin/bash
+waybar -c "$HOME/.config/waybar/Hyprlandconfig" -s "$HOME/.config/waybar/hyprland.css"

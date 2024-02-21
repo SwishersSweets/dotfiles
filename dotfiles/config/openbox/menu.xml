@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="Alacritty">
+    <action name="Execute">
+      <command>alacritty</command>
+    </action>
+  </item>
+  <item label="st">
+    <action name="Execute">
+      <command>st</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-browsers" label="Browsers">
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Librewolf">
+    <action name="Execute">
+      <command>librewolf</command>
+    </action>
+  </item>
+  <item label="Chromium">
+    <action name="Execute">
+      <command>chromium</command>
+    </action>
+  </item>
+  <item label="Tor Browser">
+    <action name="Execute">
+      <command>org.torproject.torbrowser-launcher</command>
+    </action>
+  </item>
+</menu>  
+<menu id="social-app" label="Socials">
+  <item label="Discord">
+    <action name="Execute">
+      <command>com.discordapp.Discord</command>
+    </action>
+  </item>
+  <item label="Mumble">
+    <action name="Execute">
+      <command>info.mumble.Mumble</command>
+    </action>
+  </item>
+  <item label="Telegram">
+    <action name="Execute">
+    <command>org.telegram.desktop</command>
+    </action>
+  </item>
+</menu>
+<menu id="games-app" label="Games">
+  <item label="Steam"><action name="Execute"><command>steam</command></action></item>
+  <item label="xemu"><action name="Execute"><command>app.xemu.xemu</command></action></item>
+  <item label="MelonDS"><action name="Execute"><command>net.kuribo64.melonDS</command></action></item>
+  <item label="PCSX2"><action name="Execute"><command>net.pcsx2.PCSX2</command></action></item>
+  <item label="Dolphin"><action name="Execute"><command>org.DolphinEmu.dolphin-emu</command></action></item>
+  <item label="Citra"><action name="Execute"><command>org.citra_emu.citra</command></action></item>
+  <item label="DuckStation"><action name="Execute"><command>org.duckstation.DuckStation</command></action></item>
+  <item label="Flycast"><action name="Execute"><command>org.flycast.Flycast</command></action></item>
+  <item label="Airshupper"><action name="Execute"><command>net.veloren.airshipper</command></action></item>
+  <item label="Moonlight"><action name="Execute"><command>com.moonlight_stream.Moonlight</command></action></item>
+  <item label="Space Candet Pinball"><action name="Execute"><command>com.github.k4zmu2a.spacecadetpinball</command></action></item>
+
+</menu>
+  <menu id="root-menu" label="KillDozer Menu">
+  <separator label="Apps" />
+  <menu id="apps-browsers"/>
+  <menu id="social-app"/>
+  <menu id="games-app"/>
+  <menu id="apps-term-menu"/>
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

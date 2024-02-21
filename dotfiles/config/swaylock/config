@@ -1,0 +1,28 @@
+## white #F9F2EA
+## black #262523
+image="/home/nate/Pictures/Wallpapers/1631074783442.png"
+indicator-x-position= 940
+indicator-y-position= 900
+## colors when typing
+inside-color=#F9F2EA
+ring-color=#262523
+line-color=#262523
+text-color=#FF0000
+separator-color=#262523
+## colors when verifying
+inside-ver-color=#262523
+line-ver-color=#262523
+ring-ver-color=#262523
+text-ver-color=#F9F2EA
+## wrong colors
+inside-wrong-color=#262523
+line-wrong-color=#262523
+ring-wrong-color=#262523
+text-wrong-color=#F9F2EA
+## cleared
+inside-clear-color=#262523
+line-clear-color=#262523
+ring-clear-color=#262523
+text-clear-color=#F9F2EA
+##
+text-caps-lock-color=#262523

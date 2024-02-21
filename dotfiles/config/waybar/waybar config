@@ -1,0 +1,132 @@
+{
+"layer":"top",
+"position":"top",
+"height" :20,
+"spacing":2,
+"modules-left": ["hyprland/workspaces","hyprland/window"],
+"modules-center": ["group/power"],
+"modules-right": ["group/apps","mpd","wireplumber","memory","cpu","custom/rss","clock","tray"],
+
+"hyprland/workspaces": {
+"active-only": false,
+"all-outputs": true,
+},
+"hyprland/window": {
+"format": "{initialTitle} {initialClass}",
+"separate-outputs":true,
+},
+"mpd": {
+        "format": "{randomIcon} {repeatIcon} [{artist} - {title}] ",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} MPD ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+	"max-length": 40,
+        "consume-icons": {
+            "on": "On"
+        	},
+	        "random-icons": {
+            "off": "<span color=\"#f53c3c\">[Z]</span> ",
+            "on": "[Z]",
+        	},
+        "repeat-icons": {
+            "on": "[R]",
+	     "off": "<span color=\"#f53c3c\">[R]</span> ",
+        	},
+	"on-click": "st -e ncmpcpp"
+	},
+ "clock": {
+        "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+	},
+    "tray": {
+        "icon-size": 20,
+        "spacing": 8,
+    },
+"wireplumber":{
+  "format":"[{icon} {volume}%]",
+  "format-muted":"{}",
+  "format-icons": ["","",""],
+  "on-click":"alacritty -e alsamixer -g",
+  "on-click-right":"wpctl set-mute @DEFAULT_SINK@ toggle",
+},
+"pulseaudio": {
+"format": "[{icon} {volume}%]",
+"format-icons": {},
+"default": ["", "", ""],
+"on-click": "pavucontrol"
+},
+  "memory": {
+        "format": "[ {}%]",
+	"tooltip":true,
+	"on-click": "alacritty -e btop"
+    },
+"cpu": {
+        "format": "[ {usage}%]",
+            "tooltip": true,
+	    "on-click": "st -e htop"
+		},
+"group/power": {
+"orientation":"horizontal",
+"drawer":{
+"transition-left-to-right": true,
+"transition-duration":250,
+},
+"modules": [
+"custom/shutdown",
+"custom/quit",
+"custom/lock",
+"custom/reboot",
+]
+	},
+"custom/rss": {
+"format":"  {}",
+"on-click": "st -e newsboat"
+	},
+"custom/reboot": {
+"format": " {}",
+"on-click": "reboot"
+	},
+"custom/shutdown": {
+"format": " {}",
+"on-click": "shutdown now"
+	},
+"custom/lock":{
+"format":" ",
+"on-click": "swaylock",
+	},
+"custom/quit":{
+"format": " ",
+"on-click":"hyprctl dispatch exit"
+	},
+"group/apps":{
+"orientation":"horizontal",
+"drawer":{
+"transition-left-to-right": true,
+"transition-duration":250,
+}	,
+"modules":[
+"custom/firefox",
+"custom/tor",
+"custom/chromium",
+"custom/librewolf",
+		],
+	},
+"custom/firefox":{
+"format":" {}",
+"on-click":"firefox",
+	},
+"custom/librewolf": {
+"format":" {}",
+"on-click":"librewolf",
+	},
+"custom/tor":{
+"format":" {}",
+"on-click":"org.torproject.torbrowser-launcher",
+	},
+"custom/chromium":{
+"format":" {}",
+"on-click":"chromium",
+	},
+}
