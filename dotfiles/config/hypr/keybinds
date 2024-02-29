@@ -11,7 +11,8 @@ bind = $mainMod SHIFT, F, fullscreen
 bind = $mainMod, D, exec, fuzzel
 bind = $mainMod SHIFT,R, exec,hyprctl reload
 # bind = $mainMod SHIFT, D, exec, dmenu_run
-bind = $mainMod ALT,l, exec, swaylock
+# bind = $mainMod ALT,l, exec, swaylock
+bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
 
