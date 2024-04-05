@@ -26,12 +26,12 @@
             "on": "On"
         	},
 	        "random-icons": {
-            "off": "<span color=\"#f53c3c\">[Z]</span> ",
+            "off": "<span color=\"#f53c3c\">[Z]</span>",
             "on": "[Z]",
         	},
         "repeat-icons": {
             "on": "[R]",
-	     "off": "<span color=\"#f53c3c\">[R]</span> ",
+	     "off": "<span color=\"#f53c3c\">[R]</span>",
         	},
 	"on-click": "st -e ncmpcpp"
 	},

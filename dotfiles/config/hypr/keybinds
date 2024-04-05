@@ -12,10 +12,10 @@ bind = $mainMod, D, exec, fuzzel
 bind = $mainMod SHIFT,B, exec, ~/.config/scripts/bookmarks 
 bind = $mainMod SHIFT,R, exec,hyprctl reload
 # bind = $mainMod SHIFT, D, exec, dmenu_run
-# bind = $mainMod ALT,l, exec, swaylock
 bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
+bind = $mainMod SHIFT,X, exec, ~/.config/scripts/tofipower # dmenu poweroff/exit/reboot script
 
 #media
 bindle=, XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle
