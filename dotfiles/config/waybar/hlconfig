@@ -5,23 +5,35 @@
 "spacing":2,
 "modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": ["group/power"],
-"modules-right": ["group/apps","mpd","memory","cpu","custom/rss","clock","tray"],
+"modules-right": ["mpris","mpd","privacy","wireplumber","memory","cpu","custom/rss","clock","tray"],
 
 "hyprland/workspaces": {
 "active-only": false,
 "all-outputs": true,
 },
 "hyprland/window": {
-"format": "{initialTitle}",
+"format": " {initialTitle}",
 "separate-outputs":true,
 },
+"mpris":{
+"format": "{status} {dynamic} ",
+"format-paused": "{status_icon} {dynamic} ",
+"format-len":25,
+"dynamic-len":25,
+"dynamic-order":["artist","title","album"],
+"ignored-players": ["chromium"],
+"status-icons":{
+  "pause":"",
+  "playing":"",
+  },
+},
 "mpd": {
-        "format": "{randomIcon} {repeatIcon} [{artist} - {title}] ",
-        "format-disconnected": "Disconnected",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} MPD ",
+        "format": "{randomIcon}{repeatIcon}[{artist} - {title}] ",
+        "format-stopped":" MPD",
+        "format-paused":"{randomIcon}{repeatIcon}[{artist} - {title}]",
         "unknown-tag": "N/A",
         "interval": 2,
-	"max-length": 40,
+	"max-length": 25,
         "consume-icons": {
             "on": "On"
         	},
@@ -69,6 +81,28 @@
             "tooltip": true,
 	    "on-click": "st -e btop"
 		},
+"privacy":{
+  "transition-duration":150,
+  "icon-size":16,
+  "modules": [
+		{
+			"type": "screenshare",
+			"tooltip": true,
+			"tooltip-icon-size": 16
+		},
+		{
+			"type": "audio-in",
+			"tooltip": true,
+			"tooltip-icon-size": 16
+		},
+		{
+			"type": "audio-out",
+			"tooltip": true,
+			"tooltip-icon-size": 18,
+      "transition-duration": 0
+		},
+	]
+},
 "group/power": {
 "orientation":"horizontal",
 "drawer":{
@@ -101,34 +135,5 @@
 "custom/quit":{
 "format": " ",
 "on-click":"hyprctl dispatch exit"
-	},
-"group/apps":{
-"orientation":"horizontal",
-"drawer":{
-"transition-left-to-right": true,
-"transition-duration":250,
-}	,
-"modules":[
-"custom/firefox",
-"custom/tor",
-"custom/chromium",
-"custom/librewolf",
-		],
-	},
-"custom/firefox":{
-"format":" {}",
-"on-click":"firefox",
-	},
-"custom/librewolf": {
-"format":" {}",
-"on-click":"librewolf",
-	},
-"custom/tor":{
-"format":" {}",
-"on-click":"org.torproject.torbrowser-launcher",
-	},
-"custom/chromium":{
-"format":" {}",
-"on-click":"chromium",
 	},
 }
