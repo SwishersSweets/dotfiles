@@ -16,8 +16,8 @@
 "separate-outputs":true,
 },
 "mpris":{
-"format": "{status} {dynamic} ",
-"format-paused": "{status_icon} {dynamic} ",
+"format": "{status} {dynamic}",
+"format-paused": "{status_icon} {dynamic}",
 "format-len":25,
 "dynamic-len":25,
 "dynamic-order":["artist","title","album"],
