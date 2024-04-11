@@ -85,4 +85,5 @@ bindm = $mainMod, mouse:273, resizewindow
 bind = $mainMod, PRINT, exec, hyprshot -m window --clipboard-only # Screenshot a window
 bind = , PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a window
 bind = $mainMod SHIFT, s , exec, hyprshot -m region --clipboard-only # Screenshot a window
-
+#PTT
+# bind=,mouse:276,pass,^(Mumble|Discord)$
