@@ -37,7 +37,6 @@ bind = $mainMod SHIFT, l, splitratio, 0.05 # increase mfact/master
 bind = $mainMod, equal, layoutmsg, mfact 0.55 # sets the default mfact
 
 # scripts binds
-bind = $mainMod SHIFT, m, exec, pkill waybar || ~/.config/scripts/waybar1 
 bind = $mainMod, m, exec, pkill waybar || ~/.config/scripts/waybar2 
 
 # Move focus with mainMod + arrow keys

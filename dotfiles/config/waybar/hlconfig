@@ -12,12 +12,18 @@
 "all-outputs": true,
 },
 "hyprland/window": {
-"format": " {initialTitle}",
+"format": " {title}",
+"max-length":50,
 "separate-outputs":true,
+"rewrite":{
+"(.*) Mozilla Firefox":"Mozilla Firefox",
+"(.*) Chromium":"Chromium",
+"(.*) LibreWolf": "LibreWolf",
+  },
 },
 "mpris":{
 "format": "{status} {dynamic}",
-"format-paused": "{status_icon} {dynamic}",
+"format-paused": "{status_icon} {dynamic} ",
 "format-len":25,
 "dynamic-len":25,
 "dynamic-order":["artist","title","album"],

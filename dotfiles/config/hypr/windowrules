@@ -1,5 +1,9 @@
 # window rules
-windowrule=float,title:^(Chromium)(.*)$
+#windowrule=float,mpv
+#windowrule=monitor DP-1, mpv
+#windowrule=move 1274 435,mpv
+
+#windowrule=float,title:^(Chromium)(.*)$
 
 windowrule=float,thunar
 windowrule=size 900 600,thunar
