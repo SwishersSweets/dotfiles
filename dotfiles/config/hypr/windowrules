@@ -10,13 +10,13 @@ windowrule=size 900 600,thunar
 windowrule=move 1013 473,thunar
 windowrule=rounding 4,thunar
 
-windowrulev2=float,class:(steam)title:(Steam)
-windowrulev2=size 1280 720,class:(steam)title:(Steam)
-windowrulev2=center,class(stean)title:(Steam)
+#windowrulev2=float,class:(steam)title:(Steam)
+#windowrulev2=size 1280 720,class:(steam)title:(Steam)
+#windowrulev2=center,class(stean)title:(Steam)
 windowrulev2=float,class:(steam)title:(Friends List)
-windowrulev2=size 296 472 class:(steam)title:(Friends List)
-windowrulev2=monitor HDMI-A-1,class:(steam)title:(Friends List)
-windowrulev2=move 5 602,class:(steam)title:(Friends List)
+#windowrulev2=size 296 472 class:(steam)title:(Friends List)
+#windowrulev2=monitor HDMI-A-1,class:(steam)title:(Friends List)
+#windowrulev2=move 5 602,class:(steam)title:(Friends List)
 
 windowrule=float,pavucontrol
 windowrule=size 840 600,pavucontrol
