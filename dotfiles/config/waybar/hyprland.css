@@ -19,27 +19,19 @@ window#waybar.top #window {
 window#waybar.empty #window {
   background-color:#0e0e0e;
 }
-button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
-}
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -2px #bbbbbb;
-}
 
 #workspaces button {
-    padding: 0 5px;
+    border : none;
+    border-radius: 0;
+    padding: 0 4px;
     background-color: transparent;
     color: #ffffff;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+  background: inherit;
+  box-shadow: inset 0 -2px #bbbbbb;
+
 }
 
 #workspaces button.focused {
@@ -52,7 +44,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #bb0000;
 }
 
 #mode {
@@ -61,6 +53,9 @@ button:hover {
 }
 #mpd {
   font-size: 16px;
+}
+#mpd.playing{
+  color: #33cc33
 }
 #mpd.paused {
  color:  #bbbbbb;

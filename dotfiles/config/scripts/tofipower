@@ -1,0 +1,10 @@
+#!/bin/sh
+
+chosen=$(printf "Power Off\nRestart\nLock\nLogout" | tofi)
+case "$chosen" in 
+  "Power Off") shutdown now ;;
+  "Restart") reboot ;;
+  "Lock") hyprlock ;;
+  "Logout") hyprctl dispatch exit ;;
+  *) exit 1 ;;
+esac

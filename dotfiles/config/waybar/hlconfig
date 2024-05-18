@@ -19,6 +19,7 @@
 "(.*) Mozilla Firefox":"Mozilla Firefox",
 "(.*) Chromium":"Chromium",
 "(.*) LibreWolf": "LibreWolf",
+"(.*) Tor Browser": "Tor Browser",
   },
 },
 "mpris":{
@@ -33,26 +34,41 @@
   "playing":"",
   },
 },
+"wlr/taskbar":{
+"format":"{icon}",
+"icon-theme":"adwaita",
+"icon-size":"8",
+"on-click":"activate",
+},
 "mpd": {
-        "format": "{randomIcon}{repeatIcon}[{artist} - {title}] ",
-        "format-stopped":" MPD",
-        "format-paused":"{randomIcon}{repeatIcon}[{artist} - {title}]",
+        "format": "{randomIcon}{repeatIcon} MPD {stateIcon}",
+        "format-stopped":" MPD ",
+        "format-paused":"MPD {stateIcon}",
+        "tooltip-format":"{artist} - {title} - {album} | {elapsedTime}/{totalTime}",
         "unknown-tag": "N/A",
         "interval": 2,
-	"max-length": 25,
+	      "max-length": 25,
         "consume-icons": {
             "on": "On"
         	},
 	        "random-icons": {
             "off": "<span color=\"#f53c3c\">[Z]</span>",
-            "on": "[Z]",
+            "on": "<span color=\"#00ff00\">[Z]</span>",
         	},
         "repeat-icons": {
-            "on": "[R]",
+        "on": "<span color=\"#00ff00\">[R]</span>",
 	     "off": "<span color=\"#f53c3c\">[R]</span>",
         	},
+          "state-icons":{
+            "playing":" ",
+            "paused":" ",
+          },
 	"on-click": "st -e ncmpcpp"
 	},
+  "cava":{
+    "cava_config":"/home/nate/.config/cava/",
+    "method":"pipewire",
+  },
  "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -65,9 +81,9 @@
     },
 "wireplumber":{
   "format":"[{icon} {volume}%]",
-  "format-muted":"{}",
+  "format-muted":"[{volume}%]",
   "format-icons": ["","",""],
-  "on-click-right":"alacritty -e alsamixer -g",
+  "on-click-right":"qpwgraph",
   "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",
   "on-click":"pavucontrol",
 },
