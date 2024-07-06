@@ -3,31 +3,15 @@
 #windowrule=monitor DP-1, mpv
 #windowrule=move 1274 435,mpv
 
-#windowrule=float,title:^(Chromium)(.*)$
-
 windowrule=float,thunar
 windowrule=size 900 600,thunar
 windowrule=move 1013 473,thunar
 windowrule=rounding 4,thunar
 
-#windowrulev2=float,class:(steam)title:(Steam)
-#windowrulev2=size 1280 720,class:(steam)title:(Steam)
-#windowrulev2=center,class(stean)title:(Steam)
-windowrulev2=float,class:(steam)title:(Friends List)
-#windowrulev2=size 296 472 class:(steam)title:(Friends List)
-#windowrulev2=monitor HDMI-A-1,class:(steam)title:(Friends List)
-#windowrulev2=move 5 602,class:(steam)title:(Friends List)
-
 windowrule=float,pavucontrol
 windowrule=size 840 600,pavucontrol
 windowrule=move 1073 31,pavucontrol
 windowrule=rounding 4,pavucontrol
-
-windowrulev2=float,class:(info.mumble.Mumble)title:(Mumble --)
-windowrulev2=float,class:(info.mumble.Mumble)title:(Mumble Server Connect)
-windowrulev2=size 420 240,class:(info.mumble.Mumble)title:(Mumble --)
-windowrulev2=monitor HDMI-A-1,class:(info.mumble.Mumble)title:(Mumble --)
-windowrulev2=move 1495 835,class:(info.mumble.Mumble)title:(Mumble --)
  
 windowrule=float,st-256color
 windowrule=size 840 600,st-256color
@@ -38,3 +22,5 @@ windowrulev2=maximize,class:(st-256color)title:(htop)
 windowrulev2=float,class:(Mullvad VPN)
 windowrulev2=move 1583 30,class:(Mullvad VPN)
 windowrulev2=monitor HDMI-A-1,class:(Mullvad VPN)
+
+windowrulev2=idleinhibit focus class:(steam_proton)

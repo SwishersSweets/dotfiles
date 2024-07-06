@@ -9,13 +9,12 @@ bind = $mainMod SHIFT, Q, killactive,
 bind = $mainMod SHIFT, Space, togglefloating, 
 bind = $mainMod SHIFT, F, fullscreen
 bind = $mainMod, D, exec, fuzzel
-bind = $mainMod SHIFT,B, exec, ~/.config/scripts/bookmarks 
 bind = $mainMod SHIFT,R, exec,hyprctl reload
 # bind = $mainMod SHIFT, D, exec, dmenu_run
 bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
-bind = $mainMod SHIFT,X, exec, ~/.config/scripts/tofipower # dmenu poweroff/exit/reboot script
+bind = $mainMod SHIFT,X, exec, ~/.config/scripts/tofipower # tofi menu poweroff/exit/reboot script
 
 #media
 bindle=, XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle
@@ -38,6 +37,7 @@ bind = $mainMod, equal, layoutmsg, mfact 0.55 # sets the default mfact
 
 # scripts binds
 bind = $mainMod, m, exec, pkill waybar || ~/.config/scripts/waybar2 
+bind = $mainMod SHIFT,B, exec, ~/.config/scripts/bookmarks 
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, h, movefocus, l
@@ -83,9 +83,10 @@ bindm = $mainMod, mouse:273, resizewindow
 #plugin binds
 #bind = $mainMod ALT, TAB, hyprexpo:expo, toggle 
 
-#requires hyprshot (AUR)
+# Screenshot keybinds (requires grim and hyprshot from the AUR)
 bind = $mainMod, PRINT, exec, hyprshot -m window --clipboard-only # Screenshot a window
-bind = , PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a window
-bind = $mainMod SHIFT, s , exec, hyprshot -m region --clipboard-only # Screenshot a window
+bind = SHIFT, PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a selected screen
+bind = $mainMod SHIFT, s , exec, hyprshot -m region --clipboard-only # Screenshot a selected region
+bind = , PRINT, exec, grim
 #PTT
 # bind=,mouse:276,pass,^(Mumble|Discord)$
