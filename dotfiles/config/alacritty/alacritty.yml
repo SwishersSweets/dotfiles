@@ -1,0 +1,44 @@
+window:
+ padding:
+  x: 3
+  y: 3
+ opacity: 0.85
+
+scrolling:
+ history: 200
+ multiplier: 2
+
+font:
+ size: 12
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#101010'
+    foreground: '#FFFFFF'
+  cursor:
+    text: '#d8d8d8'
+    cursor: '#FFFFFF'
+  normal:
+    black:   '#000000'
+    red:     '#C50000'
+    green:   '#00cc00'
+    yellow:  '#DDE400'
+    blue:    '#0011D1'
+    magenta: '#9500D3'
+    cyan:    '#00E5D4'
+    white:   '#ABABAB'
+  bright:
+    black:   '#454545'
+    red:     '#FF0000'
+    green:   '#21FF00'
+    yellow:  '#FEFF00'
+    blue:    '#515FFF'
+    magenta: '#DA00FF'
+    cyan:    '#00FFEC'
+    white:   '#FFFFFF'
+cursor:
+ style: block
+ blinking: off
+ unfocused_hollow: true
+ thickness: 0.1
