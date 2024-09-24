@@ -9,14 +9,8 @@ Hyprland-split-workspace is a config if I want to use the split-workspaces plugi
 Xresources and xinitrc are as they say, my .Xresources and .xinitrc
 
 
+suckless stuff
 
-Random info
-
-my sddm theme is tokyo night: https://github.com/siddrs/tokyo-night-sddm
-
-
-
-##suckless
 
 https://github.com/SwishersSweets/dmenu
 
