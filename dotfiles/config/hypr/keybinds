@@ -8,9 +8,9 @@ bind = $mainMod SHIFT, E, exit
 bind = $mainMod SHIFT, Q, killactive, 
 bind = $mainMod SHIFT, Space, togglefloating, 
 bind = $mainMod SHIFT, F, fullscreen
-bind = $mainMod, D, exec, fuzzel
+bind = $mainMod, D, exec, tofi-drun --drun-launch=true 
 bind = $mainMod SHIFT,R, exec,hyprctl reload
-# bind = $mainMod SHIFT, D, exec, dmenu_run
+bind = $mainMod SHIFT, D, exec, fuzzel
 bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
@@ -89,4 +89,4 @@ bind = SHIFT, PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a se
 bind = $mainMod SHIFT, s , exec, hyprshot -m region --clipboard-only # Screenshot a selected region
 bind = , PRINT, exec, grim
 #PTT
-# bind=,mouse:276,pass,^(Mumble|Discord)$
+bind=,mouse:276,pass,^(Mumble|Discord)$

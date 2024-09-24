@@ -1,0 +1,20 @@
+{
+  "output":"DP-1",
+  "layer":"top",
+  "position":"bottom",
+  "height":20,
+  "spacing":0,
+  "modules-left": ["wlr/taskbar",""],
+  "modules-center": [],
+  "modules-right":[],
+
+"wlr/taskbar": {
+    "active-first": true,
+    "all-output": false,
+    "format":"{icon} {title}", 
+    "icon-size":16,
+    "on-click":"activate",
+    "tooltip":"true",
+    "tooltip-format":"{name} {state} {}",
+  },
+}

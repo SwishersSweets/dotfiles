@@ -1,0 +1,19 @@
+{
+  "monitors": {
+    "HDMI-A-1": {
+      "position": "bottom",
+      "height": 20,
+      "start": [
+         {
+          "type":"launcher",
+          "all-monitors": true,
+          "icon_size":16,
+          "show_names":false
+        }
+      ],
+      "center":[
+      ],
+      "end":[]
+    }
+  }
+} 

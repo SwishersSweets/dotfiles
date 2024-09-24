@@ -23,4 +23,7 @@ windowrulev2=float,class:(Mullvad VPN)
 windowrulev2=move 1583 30,class:(Mullvad VPN)
 windowrulev2=monitor HDMI-A-1,class:(Mullvad VPN)
 
-windowrulev2=idleinhibit focus class:(steam_proton)
+# Games rules
+# windowrulev2 = immediate, class:(steam_app_240)
+
+windowrulev2=idleinhibit always, class:(steam_proton)

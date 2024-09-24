@@ -12,7 +12,8 @@
 "all-outputs": true,
 },
 "hyprland/window": {
-"format": " {title}",
+"format":" {title}",
+"icon":false,
 "max-length":50,
 "separate-outputs":true,
 "rewrite":{

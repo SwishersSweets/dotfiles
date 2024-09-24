@@ -1,0 +1,34 @@
+@define-color colo_bg #0e0e0e
+@define-color color_txt #bbbbbb
+* {
+  font-family:FontAwesome, JetBrainsMono, JetBrainsMonoNerd;
+  font-size: 16px;
+  border: none; 
+  border-radius:0
+}
+
+.background {
+background: @color_bg
+}
+
+.launcher .item {
+  margin-right: 2px;
+  border-radius:10;
+  background:@color_bg;
+}
+
+.launcher .focused {
+  background:@color_txt;
+}
+
+.launcher .item.urgent {
+  background:#bb0000;
+}
+
+.popup-launcher {
+  background-color:#000000;
+}
+
+.popup-launcher .popup-item {
+  background:#202020;
+}
