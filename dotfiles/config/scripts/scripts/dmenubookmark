@@ -1,0 +1,5 @@
+#!/bin/bash
+brow=$(cat ~/.config/scripts/browsers | dmenu )
+bmf=$(ls ~/.local/share/bookmark/ | dmenu )
+bml=$(cat ~/.local/share/bookmark/$bmf | dmenu ) 
+$brow $bml
