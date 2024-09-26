@@ -5,11 +5,17 @@
 "spacing":2,
 "modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": [],
-"modules-right": ["mpd","privacy","wireplumber","memory","cpu","custom/rss","clock","tray"],
+"modules-right": ["privacy","wireplumber","memory","cpu","custom/rss","clock","tray"],
 
 "hyprland/workspaces": {
 "active-only": false,
 "all-outputs": true,
+"format": "{icon}{id}",
+"format-icons":{
+  "empty":" ",
+  "active":"",
+  "default":"",
+  },
 },
 "hyprland/window": {
 "format":" {title}",
@@ -18,9 +24,11 @@
 "separate-outputs":true,
 "rewrite":{
 "(.*) Mozilla Firefox":"Mozilla Firefox",
-"(.*) Chromium":"Chromium",
+"(.*) Mozilla Firefox Private Browsing": "Firefox Private Browsing",
 "(.*) LibreWolf": "LibreWolf",
+"(.*) LibreWolf Private Browsing": "LibreWolf Private Browsing",
 "(.*) Tor Browser": "Tor Browser",
+"(.*) Chromium":"Chromium",
   },
 },
 "mpris":{
@@ -77,7 +85,7 @@
         "format-alt": "{:%Y-%m-%d }"
 	},
     "tray": {
-        "icon-size": 20,
+        "icon-size": 18,
         "spacing": 8,
     },
 "wireplumber":{

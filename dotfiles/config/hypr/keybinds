@@ -1,5 +1,10 @@
 # mod binds
 $mainMod = SUPER
+####OTHER MOD KEYS
+
+#SHIFT
+#ALT
+#CTRL
 
 # general binds
 bind = $mainMod, Return, exec, alacritty
@@ -15,6 +20,7 @@ bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
 bind = $mainMod SHIFT,X, exec, ~/.config/scripts/tofipower # tofi menu poweroff/exit/reboot script
+bind = $mainMod ALT, tab, exec, ~/.config/scripts/tofiwinswitch # tofi window switching  
 
 #media
 bindle=, XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle

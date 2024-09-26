@@ -1,0 +1,7 @@
+#!/bin/bash
+WINDOW=$(hyprctl clients | grep "class: " | awk '{gsub("class: ", "");print}' | tofi --config ~/.config/tofi/fullscreen )
+if [ "$WINDOW" = "" ]; then
+    exit
+fi
+hyprctl dispatch focuswindow $WINDOW
+# TAKEN FROM HERE https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3849614
