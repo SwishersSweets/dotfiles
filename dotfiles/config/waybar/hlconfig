@@ -5,11 +5,11 @@
 "spacing":2,
 "modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": [],
-"modules-right": ["privacy","wireplumber","memory","cpu","custom/rss","clock","tray"],
+"modules-right": ["custom/rss","wireplumber","memory","cpu","clock","tray"],
 
 "hyprland/workspaces": {
 "active-only": false,
-"all-outputs": true,
+"all-outputs": false,
 "format": "{icon}{id}",
 "format-icons":{
   "empty":" ",
@@ -31,25 +31,7 @@
 "(.*) Chromium":"Chromium",
   },
 },
-"mpris":{
-"format": "{status} {dynamic}",
-"format-paused": "{status_icon} {dynamic} ",
-"format-len":25,
-"dynamic-len":25,
-"dynamic-order":["artist","title","album"],
-"ignored-players": ["chromium"],
-"status-icons":{
-  "pause":"",
-  "playing":"",
-  },
-},
-"wlr/taskbar":{
-"format":"{icon}",
-"icon-theme":"adwaita",
-"icon-size":"8",
-"on-click":"activate",
-},
-"mpd": {
+/* "mpd": {
         "format": "{randomIcon}{repeatIcon} MPD {stateIcon}",
         "format-stopped":" MPD ",
         "format-paused":"MPD {stateIcon}",
@@ -77,15 +59,16 @@
   "cava":{
     "cava_config":"/home/nate/.config/cava/",
     "method":"pipewire",
-  },
+  }, */
  "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%H:%M }",
-        "format-alt": "{:%Y-%m-%d }"
+        "format": "{:%a %b %d %I:%M %p }",
+
+        "format-alt": "{:%Y-%m-%d Week: %W }"
 	},
     "tray": {
-        "icon-size": 18,
+        "icon-size": 16,
         "spacing": 8,
     },
 "wireplumber":{
@@ -96,13 +79,13 @@
   "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",
   "on-click":"pavucontrol",
 },
-"pulseaudio": {
+/*"pulseaudio": {
 "format": "[{icon} {volume}%]",
 "format-icons": {
 "default": ["", "", ""]
 		},
 "on-click": "pavucontrol"
-	},
+}, */
   "memory": {
         "format": "[ {}%]",
 	"tooltip":true,
@@ -130,12 +113,12 @@
 		{
 			"type": "audio-out",
 			"tooltip": true,
-			"tooltip-icon-size": 18,
+			"tooltip-icon-size": 16,
       "transition-duration": 0
 		},
 	]
 },
-"group/power": {
+/*"group/power": {
 "orientation":"horizontal",
 "drawer":{
 "transition-left-to-right": true,
@@ -147,12 +130,12 @@
 "custom/lock",
 "custom/reboot",
 ]
-	},
+	},*/
 "custom/rss": {
 "format":"  {}",
 "on-click": "alacritty -e newsboat"
 	},
-"custom/reboot": {
+/*"custom/reboot": {
 "format": " {}",
 "on-click": "reboot"
 	},
@@ -167,5 +150,5 @@
 "custom/quit":{
 "format": " ",
 "on-click":"hyprctl dispatch exit"
-	},
+	},*/
 }

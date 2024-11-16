@@ -1,7 +1,7 @@
 *{
 font-family: FontAwesome, JetBrainsMono;
 font-size: 16px;
-/*min-height: 20;*/
+min-height: 10px;
 }
 window#waybar {
 background-color: #0e0e0e ;
@@ -9,10 +9,10 @@ color: #bbbbbb;
 opacity: 1
 }
 window#waybar.hidden {
-opacity: 0.2;
+opacity: 1;
 }
 window#waybar.top #window {
-  padding: 0 10; 
+  padding: 0 10px; 
   background-color: #bbbbbb;
   color:#0e0e0e;
 }
@@ -26,12 +26,6 @@ window#waybar.empty #window {
     padding: 0 4px;
     color: #bbbbbb;
 }
-
-/*#workspaces button:hover {
-  background: inherit;
-  box-shadow: inset 0 -2px #bbbbbb;
-
-} */
 
 #workspaces button.active {
   background: #bbbbbb;

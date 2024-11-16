@@ -1,17 +1,17 @@
 {
-  "output":"DP-1",
+  "output":"HDMI-A-1",
   "layer":"top",
   "position":"bottom",
   "height":20,
   "spacing":0,
-  "modules-left": ["wlr/taskbar",""],
+  "modules-left": ["wlr/taskbar"],
   "modules-center": [],
   "modules-right":[],
 
 "wlr/taskbar": {
-    "active-first": true,
-    "all-output": false,
-    "format":"{icon} {title}", 
+    "active-first": false,
+    "all-output": 1,
+    "format":"{icon}", 
     "icon-size":16,
     "on-click":"activate",
     "tooltip":"true",

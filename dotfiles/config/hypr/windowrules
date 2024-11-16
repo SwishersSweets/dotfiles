@@ -1,8 +1,8 @@
 # window rules
-#windowrule=float,mpv
-#windowrule=monitor DP-1, mpv
-#windowrule=move 1274 435,mpv
-
+#windowrulev2=opacity 0.65 override,class:^(mpv)$
+#windowrulev2=opacity 1.0 override,title:(.mp4 - mpv)$
+#windowrulev2=opacity 1.0 override,title:(.mkv - mpv)$
+#windowrulev2=opacity 1.0 override,title:(.avi - mpv)$
 windowrule=float,thunar
 windowrule=size 900 600,thunar
 windowrule=move 1013 473,thunar
@@ -18,12 +18,6 @@ windowrule=size 840 600,st-256color
 windowrule=move 1073 31,st-256color
 windowrulev2=tile,class:(st-256color)title:(newsboat)
 windowrulev2=maximize,class:(st-256color)title:(htop)
-
-windowrulev2=float,class:(Mullvad VPN)
-windowrulev2=move 1583 30,class:(Mullvad VPN)
-windowrulev2=monitor HDMI-A-1,class:(Mullvad VPN)
-
 # Games rules
-# windowrulev2 = immediate, class:(steam_app_240)
-
 windowrulev2=idleinhibit always, class:(steam_proton)
+windowrulev2=idleinhibit always, class:(steam_app_*)
