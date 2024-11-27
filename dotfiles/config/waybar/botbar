@@ -1,20 +1,37 @@
 {
-  "output":"HDMI-A-1",
   "layer":"top",
   "position":"bottom",
-  "height":20,
+  "height":30,
   "spacing":0,
   "modules-left": ["wlr/taskbar"],
   "modules-center": [],
-  "modules-right":[],
+  "modules-right":["workspaces","wireplumber","clock","tray"],
 
 "wlr/taskbar": {
     "active-first": false,
     "all-output": 1,
-    "format":"{icon}", 
+    "format":"{icon}{name}", 
     "icon-size":16,
     "on-click":"activate",
     "tooltip":"true",
-    "tooltip-format":"{name} {state} {}",
+    "tooltip-format":"{title} {state}",
+  },
+"wireplumber":{
+  "format":"{icon} {volume}% ",
+  "format-muted":"[ {volume}%]",
+  "format-icons": ["","",""],
+  "on-click-right":"qpwgraph",
+  "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",
+  "on-click":"pavucontrol",
+},
+"clock":{
+   "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%a %b %d %I:%M %p }",
+        "format-alt": "{:%Y-%m-%d Week: %W }"
+  },
+"tray":{
+  "icon-size":20,
+  "spacing":8,
   },
 }
