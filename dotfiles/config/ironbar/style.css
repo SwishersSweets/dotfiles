@@ -1,5 +1,5 @@
-@define-color colo_bg #0e0e0e
-@define-color color_txt #bbbbbb
+@define-color colo_bg #0e0e0e ;
+@define-color color_txt #bbbbbb ;
 * {
   font-family:FontAwesome, JetBrainsMono, JetBrainsMonoNerd;
   font-size: 16px;
@@ -11,9 +11,12 @@
 background: @color_bg
 }
 
+.launcher {
+background: @color_bg
+}
 .launcher .item {
-  margin-right: 2px;
-  border-radius:10;
+/*  margin-right: 2px;*/
+/*  border-radius:10px;*/
   background:@color_bg;
 }
 
@@ -26,9 +29,9 @@ background: @color_bg
 }
 
 .popup-launcher {
-  background-color:#000000;
+  background-color:#ff0000;
 }
 
 .popup-launcher .popup-item {
-  background:#202020;
+  background:#0e0e0e;
 }

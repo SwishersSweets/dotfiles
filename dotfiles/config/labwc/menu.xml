@@ -55,11 +55,29 @@
   <!--
   <menu id="client-list-combined-menu" label="Running..." />
   -->
-  <item label="Web browser">
-    <action name="Execute" command="firefox" />
-  </item>
+  <menu id="apps-browser" label="Browsers">
+    <item label="Firefox">
+      <action name="Execute" command="firefox" />
+    </item>
+    <item label="Librewolf">
+      <action name="Execute" command="librewolf" />
+    </item>
+    <item label="John">
+      <action name="Execute" command="librewolf -p John"/>
+    </item>
+    <item label="Chromium">
+      <action name="Execute" command="chromium" />
+    </item>
+    <item label="Brave">
+      <action name="Execute" command="com.brave.Browser"/>
+    </item>
+    <item label="TOR Browser">
+     <action name="Execute" command="org.torproject.torbrowser-launcher"/>
+    </item>
+  </menu>
+  
   <item label="Terminal">
-    <action name="Execute" command="alacritty" />
+    <action name="Execute" command="kitty" />
   </item>
   <item label="Reconfigure">
     <action name="Reconfigure" />

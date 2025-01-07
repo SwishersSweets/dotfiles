@@ -5,7 +5,7 @@
 "spacing":2,
 "modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": [],
-"modules-right": ["custom/rss","wireplumber","memory","cpu","clock","tray"],
+"modules-right": ["custom/hyprsunset","custom/rss","wireplumber","memory","cpu","clock","tray"],
 
 "hyprland/workspaces": {
 "active-only": false,
@@ -17,6 +17,7 @@
   "default":"",
   },
 },
+
 "hyprland/window": {
 "format":" {title}",
 "icon":false,
@@ -31,6 +32,7 @@
 "(.*) Chromium":"Chromium",
   },
 },
+
 /* "mpd": {
         "format": "{randomIcon}{repeatIcon} MPD {stateIcon}",
         "format-stopped":" MPD ",
@@ -56,21 +58,20 @@
           },
 	"on-click": "st -e ncmpcpp"
 	},
-  "cava":{
-    "cava_config":"/home/nate/.config/cava/",
-    "method":"pipewire",
-  }, */
- "clock": {
+*/
+
+"clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%a %b %d %I:%M %p }",
-
         "format-alt": "{:%Y-%m-%d Week: %W }"
 	},
-    "tray": {
+
+"tray": {
         "icon-size": 16,
         "spacing": 8,
-    },
+  },
+
 "wireplumber":{
   "format":"[{icon} {volume}%]",
   "format-muted":"[{volume}%]",
@@ -79,6 +80,7 @@
   "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",
   "on-click":"pavucontrol",
 },
+
 /*"pulseaudio": {
 "format": "[{icon} {volume}%]",
 "format-icons": {
@@ -86,16 +88,21 @@
 		},
 "on-click": "pavucontrol"
 }, */
+
   "memory": {
-        "format": "[ {}%]",
+  "format": "[ {}%]",
 	"tooltip":true,
-	"on-click": "alacritty -e btop"
+	"on-click": "alacritty -e btop",
+  "interval":30,
     },
+
 "cpu": {
-        "format": "[ {usage}%]",
-            "tooltip": true,
-	    "on-click": "st -e btop"
+  "format": "[ {usage}%]",
+  "tooltip": true,
+  "on-click": "st -e btop",
+  "interval":30,
 		},
+
 "privacy":{
   "transition-duration":150,
   "icon-size":16,
@@ -118,6 +125,7 @@
 		},
 	]
 },
+
 /*"group/power": {
 "orientation":"horizontal",
 "drawer":{
@@ -131,10 +139,22 @@
 "custom/reboot",
 ]
 	},*/
+"custom/hyprsunset":{
+"format":"  {}",
+"on-click":"pkill hyprsunset || hyprsunset -t 5500",
+"on-click-right":"pkill hyprsunset || hyprsunset -t 4500",
+"on-click-middle":"pkill hyprsunset || hyprsunset -t 3500",
+"tooltip-format":"Hyprsunset
+L:5500k
+R:4500k
+M:3500k"
+},
 "custom/rss": {
 "format":"  {}",
-"on-click": "alacritty -e newsboat"
+"on-click": "alacritty -e newsboat",
+"tooltip-format":"News!",
 	},
+
 /*"custom/reboot": {
 "format": " {}",
 "on-click": "reboot"

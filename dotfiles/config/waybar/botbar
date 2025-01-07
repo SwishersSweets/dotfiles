@@ -7,10 +7,14 @@
   "modules-center": [],
   "modules-right":["workspaces","wireplumber","clock","tray"],
 
+"wlr/workspaces": {
+  "format":"{name}",
+  "all-outputs":true,
+ },
 "wlr/taskbar": {
     "active-first": false,
     "all-output": 1,
-    "format":"{icon}{name}", 
+    "format":"{icon} {name}", 
     "icon-size":16,
     "on-click":"activate",
     "tooltip":"true",
@@ -18,7 +22,7 @@
   },
 "wireplumber":{
   "format":"{icon} {volume}% ",
-  "format-muted":"[ {volume}%]",
+  "format-muted":" {volume}%",
   "format-icons": ["","",""],
   "on-click-right":"qpwgraph",
   "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",

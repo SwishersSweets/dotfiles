@@ -3,10 +3,10 @@
 #windowrulev2=opacity 1.0 override,title:(.mp4 - mpv)$
 #windowrulev2=opacity 1.0 override,title:(.mkv - mpv)$
 #windowrulev2=opacity 1.0 override,title:(.avi - mpv)$
-windowrule=float,thunar
-windowrule=size 900 600,thunar
-windowrule=move 1013 473,thunar
-windowrule=rounding 4,thunar
+#windowrule=float,thunar
+#windowrule=size 900 600,thunar
+#windowrule=move 1013 473,thunar
+#windowrule=rounding 4,thunar
 
 windowrule=float,pavucontrol
 windowrule=size 840 600,pavucontrol

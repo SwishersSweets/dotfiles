@@ -8,7 +8,8 @@
           "type":"launcher",
           "all-monitors": true,
           "icon_size":16,
-          "show_names":false
+          "show_names":false,
+          "truncate.mode":"off"
         }
       ],
       "center":[
