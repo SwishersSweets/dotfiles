@@ -1,6 +1,0 @@
-xrandr --setprovideroutputsource modsettings nvidia-0 &
-xrdb ~/.Xresources 
-feh --no-fehbg --bg-center "/home/nate/Pictures/Wallpapers/darkserioussam.png"
-picom --config ~/.config/picom/picom.conf & 
-slstatus & 
-dwm 

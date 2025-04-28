@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=DWM
-Comment=Suckless's Dynamic Window Manager
-Exec=~/.dwm/dwm
-Icon=dwm
-Type=XSession

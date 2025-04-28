@@ -1,6 +1,0 @@
-xrandr --setprovideroutputsource modsettings nvidia-0 &
-feh --no-fehbg --bg-center "/home/nate/Pictures/Wallpapers/darkserioussam.png" & 
-xrdb ~/.Xresources
-exec picom & 
-exec polybar & 
-exec openbox
