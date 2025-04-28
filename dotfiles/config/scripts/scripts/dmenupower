@@ -1,8 +1,0 @@
-#!/bin/sh
-
-chosen=$(printf "Power Off\nRestart" | dmenu)
-case "$chosen" in 
-  "Power Off") shutdown now ;;
-  "Restart") reboot ;;
-  *) exit 1 ;;
-esac

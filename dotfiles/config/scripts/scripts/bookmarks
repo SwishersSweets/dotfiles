@@ -1,6 +1,0 @@
-#!/bin/bash
-brow=$(cat ~/.config/scripts/browsers | tofi)
-bmf=$(ls ~/.local/share/bookmark/ | tofi) 
-bml=$(cat ~/.local/share/bookmark/$bmf | tofi)
-$brow $bml
-#librewolf $bml 
