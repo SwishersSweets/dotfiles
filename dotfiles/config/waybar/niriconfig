@@ -3,11 +3,11 @@
 "position":"top",
 "height" :20,
 "spacing":2,
-"modules-left": ["hyprland/workspaces","hyprland/window"],
+"modules-left": ["niri/workspaces","niri/window"],
 "modules-center": [],
-"modules-right": ["custom/hyprsunset","custom/rss","hyprland/language","wireplumber","memory","cpu","clock","tray"],
+"modules-right": ["custom/hyprsunset","custom/rss","niri/language","wireplumber","memory","cpu","clock","tray"],
 
-"hyprland/workspaces": {
+"workspaces": {
 "active-only": false,
 "all-outputs": false,
 "format": "{icon}{id}",
@@ -18,7 +18,7 @@
   },
 },
 
-"hyprland/window": {
+"niri/window": {
 "format":" {title}",
 "icon":false,
 "max-length":50,

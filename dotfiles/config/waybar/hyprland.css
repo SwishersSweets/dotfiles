@@ -1,7 +1,7 @@
 *{
 font-family: FontAwesome, JetBrainsMono;
 font-size: 16px;
-min-height: 10px;
+min-height: 8px;
 }
 window#waybar {
 background-color: #0e0e0e ;
@@ -35,7 +35,12 @@ window#waybar.empty #window {
 #workspaces button.urgent {
     background-color: #bb0000;
 }
-
+#language{
+font-size: 12px
+}
+#taskbar{ 
+font-size: 12px;
+}
 #mpd {
 
 }

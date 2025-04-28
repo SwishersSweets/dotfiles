@@ -19,9 +19,10 @@ bind = $mainMod, D, exec, fuzzel
 bind = $mainMod SHIFT,R, exec,hyprctl reload
 bind = $mainMod ALT,l,exec, hyprlock
 bind = $mainMod, TAB, layoutmsg, swapwithmaster auto # changes the current master with the focused window
+bind = $mainMod, Space,exec, hyprctl switchxkblayout corsair-corsair-k68-rgb-mechanical-gaming-keyboard next
 bind = ControlSuper, Backslash, resizeactive, exact 1280 720 # resizes floating window to 1280x720
 bind = $mainMod SHIFT,X, exec, ~/.config/scripts/tofipower # tofi menu poweroff/exit/reboot script
-bind = $mainMod ALT, tab, exec, ~/.config/scripts/tofiwinswitch # tofi window switching  
+# :bind = $mainMod ALT, tab, exec, ~/.config/scripts/tofiwinswitch # tofi window switching  
 
 #media
 bindle=, XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle
@@ -41,7 +42,7 @@ bind = $mainMod ALT, C, layoutmsg, orientationcenter # moves the master to the c
 bind = $mainMod SHIFT, h, splitratio, -0.05 # decrease mfact/master 
 bind = $mainMod SHIFT, l, splitratio, 0.05 # increase mfact/master 
 bind = $mainMod, equal, layoutmsg, mfact 0.55 # sets the default mfact
-
+bind = $mainMod, b, exec, ~/.local/share/python/fzl.sh > /dev/null 
 # scripts binds
 bind = $mainMod, m, exec, pkill waybar || ~/.config/scripts/waybar2 
 # bind = $mainMod SHIFT,B, exec, ~/.config/scripts/bookmarks # some how crashes segfaults and then crashes my system 
@@ -58,26 +59,26 @@ bind = $mainMod, up, movefocus, u
 bind = $mainMod, down, movefocus, d
 
 #workspace binds
-bind = $mainMod, 1, workspace, 1
-bind = $mainMod, 2, workspace, 2
-bind = $mainMod, 3, workspace, 3
-bind = $mainMod, 4, workspace, 4
-bind = $mainMod, 5, workspace, 5
-bind = $mainMod, 6, workspace, 6
-bind = $mainMod, 7, workspace, 7
-bind = $mainMod, 8, workspace, 8
-bind = $mainMod, 9, workspace, 9
+#bind = $mainMod, 1, workspace, 1
+#bind = $mainMod, 2, workspace, 2
+#bind = $mainMod, 3, workspace, 3
+#bind = $mainMod, 4, workspace, 4
+#bind = $mainMod, 5, workspace, 5
+#bind = $mainMod, 6, workspace, 6
+#bind = $mainMod, 7, workspace, 7
+#bind = $mainMod, 8, workspace, 8
+#bind = $mainMod, 9, workspace, 9
 
 # Move active window to a workspace with mainMod + SHIFT + [0-9]
-bind = $mainMod SHIFT, 1, movetoworkspace, 1
-bind = $mainMod SHIFT, 2, movetoworkspace, 2
-bind = $mainMod SHIFT, 3, movetoworkspace, 3
-bind = $mainMod SHIFT, 4, movetoworkspace, 4
-bind = $mainMod SHIFT, 5, movetoworkspace, 5
-bind = $mainMod SHIFT, 6, movetoworkspace, 6
-bind = $mainMod SHIFT, 7, movetoworkspace, 7
-bind = $mainMod SHIFT, 8, movetoworkspace, 8
-bind = $mainMod SHIFT, 9, movetoworkspace, 9
+#bind = $mainMod SHIFT, 1, movetoworkspace, 1
+#bind = $mainMod SHIFT, 2, movetoworkspace, 2
+#bind = $mainMod SHIFT, 3, movetoworkspace, 3
+#bind = $mainMod SHIFT, 4, movetoworkspace, 4
+#bind = $mainMod SHIFT, 5, movetoworkspace, 5
+#bind = $mainMod SHIFT, 6, movetoworkspace, 6
+#bind = $mainMod SHIFT, 7, movetoworkspace, 7
+#bind = $mainMod SHIFT, 8, movetoworkspace, 8
+#bind = $mainMod SHIFT, 9, movetoworkspace, 9
 
 # Scroll thru workpsaces whith mouse wheel or mod shift tab
 bind = $mainMod, mouse_down, workspace, e+1
@@ -94,21 +95,28 @@ bind = SHIFT, PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a se
 bind = $mainMod SHIFT, s , exec, hyprshot -z -m region --clipboard-only # Screenshot a selected region
 bind = , PRINT, exec, grim
 #PTT
-##bind=,mouse:276,pass,^(Mumble)$
-#bind=,mouse:276,pass,^(discord)$
-
+bind=,mouse:277,pass,^(discord)$ #^(.*umble.*|.*iscord.*|.*eamSpeak.*)$
+#bind=,mouse:277,global,mumble:Push-to-Talk
 
 # Switch workspaces with mainMod + [0-5]
-#bind = $mainMod, 1, split-workspace, 1
-#bind = $mainMod, 2, split-workspace, 2
-#bind = $mainMod, 3, split-workspace, 3
-#bind = $mainMod, 4, split-workspace, 4
-#bind = $mainMod, 5, split-workspace, 5
+bind = $mainMod, 1, split-workspace, 1
+bind = $mainMod, 2, split-workspace, 2
+bind = $mainMod, 3, split-workspace, 3
+bind = $mainMod, 4, split-workspace, 4
+bind = $mainMod, 5, split-workspace, 5
+bind = $mainMod, 6, split-workspace, 6
+bind = $mainMod, 7, split-workspace, 7
+bind = $mainMod, 8, split-workspace, 8
+bind = $mainMod, 9, split-workspace, 9
 
 # plugin binds
 # Move active window to a workspace with mainMod + SHIFT + [0-5]
-#bind = $mainMod SHIFT, 1, split-movetoworkspacesilent, 1
-#bind = $mainMod SHIFT, 2, split-movetoworkspacesilent, 2
-#bind = $mainMod SHIFT, 3, split-movetoworkspacesilent, 3
-#bind = $mainMod SHIFT, 4, split-movetoworkspacesilent, 4
-#bind = $mainMod SHIFT, 5, split-movetoworkspacesilent, 5
+bind = $mainMod SHIFT, 1, split-movetoworkspacesilent, 1
+bind = $mainMod SHIFT, 2, split-movetoworkspacesilent, 2
+bind = $mainMod SHIFT, 3, split-movetoworkspacesilent, 3
+bind = $mainMod SHIFT, 4, split-movetoworkspacesilent, 4
+bind = $mainMod SHIFT, 5, split-movetoworkspacesilent, 5
+bind = $mainMod SHIFT, 6, split-movetoworkspacesilent, 6
+bind = $mainMod SHIFT, 7, split-movetoworkspacesilent, 7
+bind = $mainMod SHIFT, 8, split-movetoworkspacesilent, 8
+bind = $mainMod SHIFT, 9, split-movetoworkspacesilent, 9
