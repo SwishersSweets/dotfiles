@@ -1,7 +1,7 @@
 {
 "layer":"top",
 "position":"top",
-"height" :20,
+"height": 20,
 "spacing":2,
 "modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": [],
@@ -46,8 +46,8 @@
   },
 
 "wireplumber":{
-  "format":"[{icon} {volume}%]",
-  "format-muted":"[{volume}%]",
+  "format":" {icon} {volume}%",
+  "format-muted":"{volume}%",
   "format-icons": ["","",""],
   "on-click-right":"qpwgraph",
   "on-click-middle":"wpctl set-mute @DEFAULT_SINK@ toggle",
@@ -55,7 +55,7 @@
 },
 
 /*"pulseaudio": {
-"format": "[{icon} {volume}%]",
+"format": " {icon} {volume}%",
 "format-icons": {
 "default": ["", "", ""]
 		},
@@ -63,14 +63,14 @@
 }, */
 
   "memory": {
-  "format": "[ {}%]",
+  "format": "  {}%",
 	"tooltip":true,
 	"on-click": "alacritty -e btop",
   "interval":30,
     },
 
 "cpu": {
-  "format": "[ {usage}%]",
+  "format": "  {usage}% ",
   "tooltip": true,
   "on-click": "st -e btop",
   "interval":30,
@@ -144,4 +144,7 @@ M:3500k"
 "format": " ",
 "on-click":"hyprctl dispatch exit"
 	},*/
+/*"custom/slstatus":{
+  "exec": "slstatus -s"*/
+  }
 }

@@ -1,0 +1,52 @@
+*{
+font-family: FontAwesome, JetBrainsMono;
+font-size: 16px;
+min-height: 8px;
+}
+window#waybar {
+background-color: #0e0e0e ;
+color: #bbbbbb;
+opacity: 1
+}
+window#waybar.hidden {
+opacity: 1;
+}
+window#waybar.top #window {
+  padding: 0 10px; 
+  background-color: #bbbbbb;
+  color:#0e0e0e;
+}
+window#waybar.empty #window {
+  background-color:#0e0e0e;
+}
+
+#tags button {
+    border : none;
+    border-radius: 0;
+    padding: 0 4px;
+    color: #bbbbbb;
+}
+
+#tags button.occupied {
+}
+
+#tags button.focused {
+  background-color: #bbbbbb;
+  color: #0e0e0e;
+}
+
+
+#tags button.active {
+  background: #bbbbbb;
+  color:#0e0e0e;
+}
+
+#tags button.urgent {
+    background-color: #bb0000;
+}
+#language{
+font-size: 12px;
+}
+#taskbar{ 
+font-size: 12px;
+}

@@ -44,7 +44,7 @@ bind = $mainMod SHIFT, l, splitratio, 0.05 # increase mfact/master
 bind = $mainMod, equal, layoutmsg, mfact 0.55 # sets the default mfact
 bind = $mainMod, b, exec, ~/.local/share/python/fzl.sh > /dev/null 
 # scripts binds
-bind = $mainMod, m, exec, pkill waybar || ~/.config/scripts/waybar2 
+bind = $mainMod, m, exec, pkill waybar || ~/.config/scripts/waybar.sh
 # bind = $mainMod SHIFT,B, exec, ~/.config/scripts/bookmarks # some how crashes segfaults and then crashes my system 
 bind = $mainMod SHIFT, b, exec, librewolf -P John
 
@@ -92,10 +92,10 @@ bindm = $mainMod, mouse:273, resizewindow
 # Screenshot keybinds (requires grim and hyprshot from the AUR)
 bind = $mainMod, PRINT, exec, hyprshot -m window --clipboard-only # Screenshot a window
 bind = SHIFT, PRINT, exec, hyprshot -m output --clipboard-only # Screenshot a selected screen
-bind = $mainMod SHIFT, s , exec, hyprshot -z -m region --clipboard-only # Screenshot a selected region
+bind = $mainMod SHIFT, s , exec, hyprshot -m region --clipboard-only # Screenshot a selected region
 bind = , PRINT, exec, grim
 #PTT
-bind=,mouse:277,pass,^(discord)$ #^(.*umble.*|.*iscord.*|.*eamSpeak.*)$
+# bind=,mouse:277,global,#^(*mumble*)$ #^(.*umble.*|.*iscord.*|.*eamSpeak.*)$
 #bind=,mouse:277,global,mumble:Push-to-Talk
 
 # Switch workspaces with mainMod + [0-5]

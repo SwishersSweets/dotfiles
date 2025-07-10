@@ -3,7 +3,7 @@
 #windowrule=move 1013 473,thunar
 #windowrule=rounding 4,thunar
 windowrule = float, class:(thunar), title:(File Operation Progress)
-
+windowrule = float, class:(thunar), title:(Rename*)
 windowrule = float, class:(steam), title:(Friends List),
 #windowrule = monitor DP-3, class:(steam), title:(Friends List)
 
@@ -16,3 +16,4 @@ windowrule = maximize,class:(st-256color)title:(htop)
 windowrule = idleinhibit always, class:(steam_proton)
 windowrule = idleinhibit always, class:(steam_app*)
 windowrule = idleinhibit always, class:(shadps4)
+windowrule = idleinhibit always, class:(witcher3.exe)
